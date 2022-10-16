@@ -1,4 +1,5 @@
-</with = 'center'>
+<div align="center">
+  
 #### Codificando sin hablar - Programas en Python 
 
 
@@ -10,6 +11,6 @@
 <a href='https://youtu.be/10eDkXApcL0' target='_blank'>
   <img width='26.5%' src='https://github.com/MagnoEfren/no_talking_code/blob/main/Donut%20%203D/donut-ss.png' alt='GUI con PyQt5 - Arduino' />
 </a>
-<a href='https://youtu.be/EYs6uWmCWwI' target='_blank'>
-  <img width='30%' src='https://github.com/MagnoEfren/magnoefren/blob/main/images/video03.png' alt='Aplicación android en Python con base de datos' />
+<a href='https://youtu.be/8hVuD0ng364' target='_blank'>
+  <img width='30%' src='https://github.com/MagnoEfren/no_talking_code/blob/main/Logo_python/python-ss.png' alt='Aplicación android en Python con base de datos' />
 </a>
