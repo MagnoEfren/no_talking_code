@@ -1,3 +1,5 @@
+# @autor: Magno Efren
+# Youtube: https://www.youtube.com/c/MagnoEfren
 
 from tkinter import Frame, Tk, Canvas
 from random import choice 
