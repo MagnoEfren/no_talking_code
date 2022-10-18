@@ -33,11 +33,9 @@ class Donut(Frame):
 			obj = self.canvas.create_text(0, i, font=('Arial', 14))
 			self.objects.append(obj)
 
-
 	def draw(self, obj, char, x,y, color):
 		self.canvas.itemconfig(obj, fill = color, text = char)
 		self.canvas.coords(obj, 200+x, y)
-
 
 	def update(self):
 		output = [' ']*1600
@@ -75,7 +73,6 @@ class Donut(Frame):
 					index = int(L*8)
 					output[position] = self.chars[index if index > 0 else 0 ]
 
-
 		for i in range(40):
 			self.y += 16
 			for j in range(40):
@@ -90,7 +87,6 @@ class Donut(Frame):
 		self.B += 0.23 
 
 		self.master.after(50, self.update)
-
 
 if __name__ == '__main__':
 	root = Tk()
