@@ -39,14 +39,3 @@ half()
 
 t.hideturtle()
 t.exitonclick()
-
-
-
-
-
-
-
-
-
-
-
