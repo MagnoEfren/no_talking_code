@@ -11,7 +11,6 @@ class Matrix(Frame):
 		self.canvas = Canvas(master, bg= 'black')
 		self.canvas.place(relx=0, rely=0, relwidth=1, relheight=1)
 
-
 		self.velocidad = [i for i in range(0,30,5)]
 		self.pos = [i for i in range(-200,200,20)]
 		self.letters = []
@@ -29,7 +28,6 @@ class Matrix(Frame):
                       "j", "t", "4", "4", "4", "П", "Ц",
                 ]
 
-
 		self.draw()
 		self.update()
 
@@ -40,8 +38,6 @@ class Matrix(Frame):
 				self.obj = self.canvas.create_text(20+x, -200+y+j, text= choice(self.caracteres),
 					fill = 'green2', font= ('Arial', 14))
 				self.letters.append(self.obj)
-
-
 	def update(self):
 		for letter in self.letters:
 			v = choice(self.velocidad)
@@ -62,10 +58,6 @@ class Matrix(Frame):
 				self.canvas.delete('all')
 		
 		self.canvas.after(80, self.update)
-
-
-
-
 
 if __name__ == '__main__':
 	root = Tk()
