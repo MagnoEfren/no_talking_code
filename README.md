@@ -12,7 +12,7 @@
   <img width='26.5%' src='https://github.com/MagnoEfren/no_talking_code/blob/main/Donut%20%203D/donut-ss.png' alt='GUI con PyQt5 - Arduino' />
 </a>
 <a href='https://youtu.be/8hVuD0ng364' target='_blank'>
-  <img width='30%' src='https://github.com/MagnoEfren/no_talking_code/blob/main/Logo_python/python-ss.png' alt='Aplicación android en Python con base de datos' />
+  <img width='30%' src='https://github.com/MagnoEfren/no_talking_code/blob/main/Heart/heart-ss.png' alt='Aplicación android en Python con base de datos' />
 </a>
 
 </div>
