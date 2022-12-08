@@ -1,0 +1,49 @@
+
+<Ui>:
+	MDScreen:
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: [dp(12),dp(12),dp(12),dp(12)]
+            size_hint: 1,1
+            spacing: dp(12)
+
+            MDBoxLayout:
+                orientation: 'horizontal'
+                padding: [dp(12),dp(12),dp(12),dp(12)]
+                size_hint: 1,0.70
+                MDLabel:
+                    id: numero
+                    text: '00:00'
+                    font_size: (self.width)/4
+                    font_name: 'Radioland'
+                    halign:'right'
+                    size_hint: 0.7,1
+                MDLabel:
+                    id: ms_numero
+                    text: '.00'
+                    font_size: self.width/4
+                    font_name: 'Radioland'
+                    halign:'left'
+                    size_hint: 0.3,1
+
+            MDBoxLayout:
+                orientation: 'horizontal'
+                padding: [dp(62),dp(12),dp(12),dp(12)]
+                spacing: dp(12)
+                size_hint: 1,0.30
+
+                MDFloatingActionButton:
+                    id: estado
+                    icon:'palette-outline'
+                    elevation_normal: 12
+                    on_release: app.open_color_picker()
+                MDFloatingActionButton:
+                    id: control
+                    icon:'play-circle-outline'
+                    elevation_normal: 20
+                    on_release: app.button_state(*args)
+                MDFloatingActionButton:
+                    id: reset
+                    icon:'restart'
+                    elevation_normal: 12
+                    on_release: app.button_reset(*args)
