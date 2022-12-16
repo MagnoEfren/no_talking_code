@@ -1,0 +1,70 @@
+#########  seudocódigo  #################
+
+
+Crear clase Cube que hereda de Frame
+    Definir método __init__
+        Inicializar Frame
+        Crear canvas
+        Situar canvas en pantalla
+        Inicializar lista points con 8 puntos
+        Inicializar scale y position
+        Inicializar matriz de proyección
+        Inicializar lista xy
+        Crear objetos de canvas para puntos y líneas
+        Llamar a update
+    Definir método create_obj
+        Crear objetos para cada punto y línea
+    Definir método draw_points
+        Configurar objeto para dibujar un punto con un carácter y un color
+        Colocar objeto en las coordenadas x,y
+    Definir método connect_points
+        Configurar objeto para dibujar una línea con un color y ancho
+        Colocar objeto entre las coordenadas xy[i] y xy[j]
+    Definir método update
+        Crear matrices de rotación
+        Incrementar theta
+        Elegir color aleatoriamente
+        Para cada punto en points:
+            Aplicar rotación
+            Proyectar punto
+            Calcular coordenadas x,y
+            Dibujar punto
+            Actualizar xy
+            Conectar puntos con líneas
+        Programar llamada a update en el futuro
+Crear ventana principal
+Crear instancia de Cube
+Ejecutar ventana principal
+
+############ Comentarios #############
+
+Este código define una clase llamada "Cube" que hereda de la clase "Frame" 
+de la biblioteca tkinter. La clase "Frame" es una clase básica de la interfaz 
+gráfica de usuario de tkinter que permite contener otros widgets.
+
+La clase "Cube" tiene un método init, que es el constructor de la clase y se 
+ejecuta al crear una instancia de esta clase. Dentro del constructor, se inicializa la clase "Frame"
+y se crea un canvas, que es un área donde se pueden dibujar gráficos y otras formas. Luego se sitúa el 
+canvas en la pantalla y se inicializan varias variables, como "points", que es una lista de puntos que forman un cubo, 
+"scale", que es una escala para dibujar el cubo, "objects_points" y "objects_lines", que son listas de objetos de canvas 
+que se usarán para dibujar los puntos y líneas del cubo, y "theta", que es un ángulo de rotación y "position", 
+que es la posición del cubo en la pantalla.
+
+Luego se generan los puntos del cubo con la función "product" de la biblioteca "itertools", que devuelve una
+lista de tuplas con todas las combinaciones posibles de -1 y 1. Estos puntos se almacenan en la lista "points" como arrays de numpy.
+
+Se crea una matriz de proyección y una lista "xy" que se usará para almacenar las coordenadas x,y de cada punto del cubo.
+
+Luego se llama al método "create_obj", que crea los objetos de canvas para dibujar los puntos y líneas del cubo, y se llama 
+al método "update", que se encarga de actualizar la posición y rotación del cubo en la pantalla.
+
+El método "create_obj" crea 8 objetos de canvas para los puntos del cubo y 12 objetos de canvas para las líneas del cubo.
+
+El método "draw_points" se encarga de configurar un objeto de canvas para dibujar un punto con un carácter y un color 
+específico y colocarlo en las coordenadas x,y.
+
+El método "connect_points" se encarga de configurar un objeto de canvas para dibujar una línea entre dos puntos 
+con un color y ancho específico.
+
+El método "update" se encarga de actualizar la posición y rotación del cubo en la pantalla. Primero, crea tres 
+matrices de rotación en el eje x, y y z. Luego, incrementa "theta" en 0.06 y elige un color aleatorio de una lista de colores.
