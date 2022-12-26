@@ -1,3 +1,6 @@
+# @autor: Magno Efren
+# Youtube: https://www.youtube.com/c/MagnoEfren
+
 from tkinter import Tk, Frame, Canvas 
 from math import cos, sin
 from random import randint  
@@ -65,8 +68,6 @@ class Heart(Frame):
 		num = 0
 		self.n += 0.3
 		self.master.after(80, self.update)
-
-
 
 if __name__ == "__main__":
 	root = Tk()
