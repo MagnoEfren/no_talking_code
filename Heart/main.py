@@ -5,6 +5,7 @@ from tkinter import Canvas, Tk, Frame
 from math import cos, sin 
 from random import randint, choice
 
+
 class Heart(Frame):
 	def __init__(self, master):
 		super().__init__(master)
