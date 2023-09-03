@@ -39,8 +39,6 @@ class Animation(Frame):
             self.canvas.itemconfig(self.dot[i], outline= color, fill = color)
         self.after(10, self.update)
 
-
-
 if __name__ == "__main__":
     root = Tk()
     root.title('Animation')
