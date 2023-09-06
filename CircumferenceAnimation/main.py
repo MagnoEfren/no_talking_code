@@ -14,7 +14,6 @@ class Animation(Frame):
         self.y = self.r 
         self.dot = 1000*[0]
         self.color = 0 
-
         self.canvas = Canvas(master, bg= 'black')
         self.canvas.place(relx =0, rely = 0, relwidth =1, relheight=1)
         for i in self.n:
