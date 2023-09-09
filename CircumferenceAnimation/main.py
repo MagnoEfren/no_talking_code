@@ -2,6 +2,7 @@ from tkinter import Tk, Frame, Canvas
 import numpy as np 
 import colorsys 
 
+
 class Animation(Frame):
     def __init__(self, master):
         super().__init__(master)
