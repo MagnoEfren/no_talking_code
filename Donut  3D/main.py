@@ -23,7 +23,6 @@ class Donut(Frame):
 		self.x = 0 
 		self.y = 0 
 		self.chars = '.,-~:;=!*#$@"'
-
 		self.create_obj()
 		self.update()
 
