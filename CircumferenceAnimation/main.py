@@ -1,6 +1,4 @@
 
-
-
 from tkinter import Tk, Frame, Canvas
 import numpy as np 
 import colorsys 
