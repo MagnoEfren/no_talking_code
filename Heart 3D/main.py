@@ -1,6 +1,7 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren
 
+
 from tkinter import Tk, Frame, Canvas 
 from math import cos, sin
 from random import randint  
